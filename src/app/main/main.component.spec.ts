@@ -51,7 +51,11 @@ describe('MainComponent', () => {
     it( 'should fetch 6 prizes', () => {
         let fixture = TestBed.createComponent(MainComponent);
         fixture.componentInstance.ngOnInit();
-        let prizesAmount = fixture.componentInstance.parsedPrizes.length;
-        expect( prizesAmount ).toEqual( 6 );
+        setTimeout( function() {
+            // don't use setTImeout in production. Use callback
+            // or event emitter instead.
+            let prizesAmount = fixture.componentInstance.parsedPrizes.length;
+            expect( prizesAmount ).toEqual( 6 );
+        }, 1500 );
     });
 });

@@ -53,7 +53,11 @@ describe('PrizeComponent', () => {
     it( 'should fetch 3 latest Physics Laureate', () => {
         let fixture = TestBed.createComponent(PrizeComponent);
         fixture.componentInstance.ngOnInit();
-        let laureates = fixture.componentInstance.prizesInADecade[ 0 ].tempPrizes[ 0 ].laureates;
-        expect( laureates.length ).toEqual( 3 );
+        setTimeout( function() {
+            // don't use setTImeout in production. Use callback
+            // or event emitter instead.
+            let laureates = fixture.componentInstance.prizesInADecade[ 0 ].tempPrizes[ 0 ].laureates;
+            expect( laureates.length ).toEqual( 3 );
+        }, 1500 );
     });
 });
