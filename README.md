@@ -13,8 +13,9 @@ Some assumptions & information about the application:
 
 ## Installation
 
-1. Create a folder, say "visa", and clone the repository there: git clone https://github.com/isteven/visa.git
+Installation steps:
 
+1. Create a folder, say "visa", and clone the repository there: git clone https://github.com/isteven/visa.git
 2. Go to that "visa" folder, open a terminal, and run "npm install"
 
 To run it, see the **Development server** part below.
