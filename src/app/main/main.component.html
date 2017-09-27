@@ -1,0 +1,33 @@
+<div class="container main-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <a routerLink="/main">Home</a>    
+        </div>
+    </div>
+</div>
+<div class="container main-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <h5>
+                On 27 November 1895, Alfred Nobel signed his last will and testament,
+                giving the largest share of his fortune to a series of prizes in
+                Physics, Chemistry, Physiology or Medicine, Literature and Peace - the Nobel Prizes.
+                In 1968, Sveriges Riksbank (Sweden's central bank) established
+                The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel.
+            </h5>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let prize of parsedPrizes" class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            <a routerLink="/prize/{{prize.category}}" class="prizeBlocks">
+                <div>
+                    <i class="{{prize.prizesIcons}}"></i>
+                    <br />
+                    {{prize.category}}
+                    <br />
+                    {{prize.sum}} Prizes awarded
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

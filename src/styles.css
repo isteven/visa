@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+.main-content {
+    margin-top: 25px;
+}
+.main-content h5 {
+    /*margin: 0px 15px;*/
+}
+
+.navbar-toggler {
+    color: #fff !important;
+    border: 0px none !important;
+}
+
+.bg-dark {
+    background-color: rgb(54, 64, 98) !important;
+}
+
+.navbar-brand img {
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

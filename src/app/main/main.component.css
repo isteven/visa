@@ -1,0 +1,32 @@
+
+
+
+.prizeBlocks {
+    display: inline-block;
+    background-color: rgb(54, 64, 98);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.prizeBlocks a {
+    display: inline-block;
+    color: #fff;
+    text-decoration:none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.prizeBlocks i {
+    display: block;
+    width: 100%;
+    font-size: 60px;
+    color: #fff;
+}

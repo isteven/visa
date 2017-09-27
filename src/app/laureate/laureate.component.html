@@ -1,0 +1,65 @@
+<div class="container main-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <a routerLink="/main">Home</a> >
+            <a routerLink="/prize/{{prizeCategory}}" class="capitalize">{{prizeCategory}}</a> >
+            <span class="capitalize">{{selectedLaureate.firstname}} {{selectedLaureate.surname}}</span>
+        </div>
+    </div>
+</div>
+<div class="container main-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <h5>Laureate Information</h5>
+            <br />
+            <h5>Personal</h5>
+            <p>
+                First name: {{selectedLaureate.firstname}}
+                <br />
+                Surname: {{selectedLaureate.surname}}
+                <br />
+                Born: {{selectedLaureate.born}}
+                <br />
+                Died: {{selectedLaureate.died}}
+                <br />
+                Born Country: {{selectedLaureate.bornCountry}}
+                <br />
+                Born Country Code: {{selectedLaureate.bornCountryCode}}
+                <br />
+                Born City: {{selectedLaureate.bornCity}}
+                <br />
+                Died Country: {{selectedLaureate.diedCountry}}
+                <br />
+                Died Country Code: {{selectedLaureate.diedCountryCode}}
+                <br />
+                Died City: {{selectedLaureate.diedCity}}
+                <br />
+                Gender: {{selectedLaureate.gender}}
+            </p>
+            <h5>Prize</h5>
+            <ul>
+                <li *ngFor="let prize of selectedLaureate.prizes">
+                    <p>
+                        Year: {{prize.year}}
+                        <br />
+                        Category: {{prize.category}}
+                        <br />
+                        Motivation: {{prize.motivation}}
+                    </p>
+                    <h6>Affiliation</h6>
+                    <ul>
+                        <li *ngFor="let affiliation of prize.affiliations">
+                            <p>
+                                City: {{affiliation.city}}
+                                <br />
+                                Country: {{affiliation.country}}
+                                <br />
+                                Name: {{affiliation.name}}
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>            
+        </div>
+    </div>
+</div>

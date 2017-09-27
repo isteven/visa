@@ -1,0 +1,58 @@
+<div class="container main-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <a routerLink="/main">Home</a> >
+            <span class="capitalize">{{urlCategory}}</span>
+        </div>
+    </div>
+</div>
+<div class="container main-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <h5>
+                Nobel Prizes in {{urlCategory}}, grouped into different decades.
+                <br/><br/>
+            </h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group d-none d-xs-none d-sm-none d-md-block d-lg-block">
+                <!-- List -->
+                <li *ngFor="let prize of prizesInADecade" class="list-group-item prizeYearSelector">
+                    <a (click)="aDecadePrizes = prize;">
+                        {{prize.yearStart}}
+                        -
+                        {{prize.yearEnd}}
+                    </a>
+                </li>
+            </ul>
+            <!-- Select -->
+            <select [(ngModel)]="aDecadePrizes" class="d-md-none d-lg-none w-100 form-control" >
+                <option *ngFor="let prize of prizesInADecade" [ngValue]="prize">
+                    {{prize.yearStart}}
+                    -
+                    {{prize.yearEnd}}
+                </option>
+            </select>
+            <br />
+        </div>
+        <div class="col-md-9">
+            <h5>{{aDecadePrizes.yearStart}} - {{aDecadePrizes.yearEnd}}</h5>
+            <ul>
+                <li *ngFor="let yearPrizes of aDecadePrizes.tempPrizes">
+                    {{yearPrizes.year}}
+                    <ul>
+                        <li *ngFor="let laureate of yearPrizes.laureates">
+                            <a routerLink="/laureate/{{urlCategory}}/{{laureate.id}}">
+                                {{laureate.firstname}}
+                                {{laureate.surname}}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>

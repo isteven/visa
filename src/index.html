@@ -1,14 +1,52 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Visa</title>
-  <base href="/">
+    <head>
+        <meta charset="utf-8">
+        <title>Visa</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">
+                            Lorem ipsum
+                        </p>
+                    </div>
+                    <div class="col-sm-4 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://github.com/isteven" target="_blank" class="text-white">Github</a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark">
+            <div class="container d-flex justify-content-between">
+                <a href="/main" class="navbar-brand">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDg3IDU2IiBoZWlnaHQ9IjU2cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA4NyA1NiIgd2lkdGg9Ijg3cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxwb2x5Z29uIGZpbGw9IiNGMUYyRjIiIHBvaW50cz0iMSwyLjcyOSAxLDUzLjE1MiA4Niw1My4xNTIgODYsMi43MjkgICIvPjxyZWN0IGZpbGw9IiNGMUYyRjIiIGhlaWdodD0iMjcuOTc5IiB3aWR0aD0iODUiIHg9IjEiIHk9IjE0LjAxIi8+PHBhdGggZD0iTTEsNDEuOTg4djEwLjY0NmMwLDAuODEzLDAuNDUsMS41MjgsMS4xMzUsMS45NTRDMi41NSw1NC44NSwzLjA1Miw1NSwzLjU5Myw1NWg3OS44MTQgICBjMC41NDEsMCwxLjA0My0wLjE1LDEuNDU4LTAuNDFDODUuNTUsNTQuMTY0LDg2LDUzLjQ0OCw4Niw1Mi42MzZWNDEuOTg4SDF6IiBmaWxsPSIjRkFBNjFBIi8+PHBhdGggZD0iTTg0Ljg2NSwxLjQxQzg0LjQ0OSwxLjE1MSw4My45NDgsMSw4My40MDcsMUgzLjU5M0MzLjA1MiwxLDIuNTUxLDEuMTUxLDIuMTM2LDEuNDEgICBDMS40NTEsMS44MzUsMSwyLjU1MiwxLDMuMzY1VjE0LjAxaDg1VjMuMzY1Qzg2LDIuNTUyLDg1LjU1LDEuODM1LDg0Ljg2NSwxLjQxeiIgZmlsbD0iIzAwNTg5RiIvPjxwb2x5Z29uIGZpbGw9IiNGMUYyRjIiIHBvaW50cz0iNzEuNTM4LDMxLjIxOSA2Ni42NjEsMzEuMjE5IDY5LjcsMjMuMjI1ICAiLz48Zz48cG9seWdvbiBmaWxsPSIjMDA1ODlGIiBwb2ludHM9IjMzLjQ5OSwzOC4yMTQgMzYuOTg5LDE3LjcyIDQyLjU3OSwxNy43MiAzOS4wODEsMzguMjE0ICAgIi8+PHBhdGggZD0iTTU5LjM0NCwxOC4yMjRjLTEuMTA3LTAuNDE1LTIuODQyLTAuODYtNS4wMS0wLjg2Yy01LjUxOCwwLTkuNDA2LDIuNzc5LTkuNDM5LDYuNzY0ICAgIGMtMC4wMzEsMi45NDQsMi43NzUsNC41ODgsNC44OTUsNS41NjhjMi4xNzQsMS4wMDUsMi45MDYsMS42NDYsMi44OTYsMi41NDNjLTAuMDE4LDEuMzczLTEuNzM4LDEuOTk4LTMuMzQ2LDEuOTk4ICAgIGMtMi4yMzQsMC0zLjQyMi0wLjMwNy01LjI1Ni0xLjA3M2wtMC43Mi0wLjMyNmwtMC43ODQsNC41ODljMS4zMDQsMC41NywzLjcxNywxLjA2NCw2LjIyMywxLjA5M2M1Ljg3NSwwLDkuNjg0LTIuNzQ5LDkuNzI3LTcuMDAzICAgIGMwLjAyMS0yLjMyOS0xLjQ2NS00LjEwNC00LjY4OS01LjU2OGMtMS45NTUtMC45NS0zLjE1LTEuNTgxLTMuMTM5LTIuNTRjMC0wLjg1NCwxLjAxNC0xLjc2MywzLjIwMS0xLjc2MyAgICBjMS44MjQtMC4wMywzLjE1LDAuMzY5LDQuMTc4LDAuNzg0bDAuNTA0LDAuMjM3TDU5LjM0NCwxOC4yMjRMNTkuMzQ0LDE4LjIyNHoiIGZpbGw9IiMwMDU4OUYiLz48cGF0aCBkPSJNNzMuNjY4LDE3LjczOWgtNC4zMTZjLTEuMzM4LDAtMi4zMzgsMC4zNjUtMi45MjYsMS42OTlsLTguMjk1LDE4Ljc4NGg1Ljg2N2MwLDAsMC45NTUtMi41MjUsMS4xNzQtMy4wODEgICAgYzAuNjQxLDAsNi4zNCwwLjAxLDcuMTU0LDAuMDFjMC4xNjYsMC43MTgsMC42OCwzLjA3MiwwLjY4LDMuMDcyaDUuMTg2TDczLjY2OCwxNy43MzlMNzMuNjY4LDE3LjczOXogTTY2Ljc3OSwzMC45NSAgICBjMC40NjMtMS4xODEsMi4yMjctNS43MjksMi4yMjctNS43MjljLTAuMDMxLDAuMDUzLDAuNDU5LTEuMTg4LDAuNzQtMS45NThsMC4zNzcsMS43NjdjMCwwLDEuMDY4LDQuODkzLDEuMjk1LDUuOTJINjYuNzc5ICAgIEw2Ni43NzksMzAuOTV6IiBmaWxsPSIjMDA1ODlGIi8+PHBhdGggZD0iTTI4LjgxMywxNy43MzVsLTUuNDcsMTMuOTc3bC0wLjU4NS0yLjg0Yy0xLjAxNi0zLjI3NC00LjE4OC02LjgyMi03LjczNi04LjU5OEwyMC4wMjMsMzguMmw1LjkxMS0wLjAwOSAgICBsOC43OTUtMjAuNDU2SDI4LjgxM0wyOC44MTMsMTcuNzM1eiIgZmlsbD0iIzAwNTg5RiIvPjxwYXRoIGQ9Ik0xOC4yNzEsMTcuNzIySDkuMjZsLTAuMDY5LDAuNDI3YzcuMDA4LDEuNjk3LDExLjY0Niw1Ljc5OCwxMy41NjgsMTAuNzI0bC0xLjk1Ny05LjQxOSAgICBDMjAuNDY0LDE4LjE1NSwxOS40ODMsMTcuNzY5LDE4LjI3MSwxNy43MjJMMTguMjcxLDE3LjcyMnoiIGZpbGw9IiNGOUE1MUEiLz48L2c+PC9nPjwvc3ZnPg==" style="height:30px;"/>
+                    &nbsp;VISA / NOBEL
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon" style="font-size:small;"></span> -->
+                    <span class="fa fa-bars"></span>
+                </button>
+            </div>
+        </div>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+        <app-root></app-root>
+
+        <script src="https://use.fontawesome.com/2504680e4b.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    </body>
 </html>
