@@ -10,7 +10,7 @@ Some assumptions & information about the application:
 - Laureate API data is too big to be downloaded in one go, so it's always fetched everytime user visit the laureate detail page. Turns out extra parameters can be added to the Laurete API to fetch a single user.
 - Prizes are grouped by 10 years. It gives a sense of information for user, rather than just 1-2-3.. paging or lazy-loading by scrolling. Additionally, the number of laureates per year are not that many and can be displayed on both desktop & small screen devices nicely.
 - Responsive design is managed by Bootstrap 4. Font-Awesome is used for the icons. For production, these libraries can be packaged together with the app assets instead of getting it from the CDN. A package management like Bower or Webpack can be used for this purpose.
--Just simple test cases for now. 
+- Just simple test cases for now. 
 
 ## Installation
 
